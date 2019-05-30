@@ -30,5 +30,12 @@ namespace WindowsFormsApp1
             result = MessageBox.Show($"You Typed: {textBox2.Text}", "MessageBox 2", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Error);
             label4.Text = "You clicked the " + result.ToString() + "button";
         }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            DialogResult result;
+            result = MessageBox.Show($"You Typed: {textBox3.Text}", "MessageBox 3", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            label4.Text = "You clicked the " + result.ToString() + "button";
+        }
     }
 }
