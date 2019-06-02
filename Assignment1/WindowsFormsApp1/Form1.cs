@@ -21,21 +21,21 @@ namespace WindowsFormsApp1
         {
             DialogResult result;
             result = MessageBox.Show($"You Typed: {textBox1.Text}", "MessageBox 1",MessageBoxButtons.RetryCancel, MessageBoxIcon.Asterisk);
-            label4.Text = "You clicked the " + result.ToString() + "button";
+            label4.Text = "You clicked the " + result.ToString() + " button";
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
             DialogResult result;
             result = MessageBox.Show($"You Typed: {textBox2.Text}", "MessageBox 2", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Error);
-            label4.Text = "You clicked the " + result.ToString() + "button";
+            label4.Text = "You clicked the " + result.ToString() + " button";
         }
 
         private void Button3_Click(object sender, EventArgs e)
         {
             DialogResult result;
             result = MessageBox.Show($"You Typed: {textBox3.Text}", "MessageBox 3", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            label4.Text = "You clicked the " + result.ToString() + "button";
+            label4.Text = "You clicked the " + result.ToString() + " button";
         }
     }
 }
