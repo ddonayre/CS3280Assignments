@@ -93,11 +93,7 @@ namespace A2
             for (int i = 1; i <= 6; i++)
             {
 
-                double percentage = (double)frequencyRoll[i] / (timesPlayed);
-                if (percentage != null)
-                {
-                    percentage = 0;
-                }
+                double percentage = frequencyRoll[i] / (double)(timesPlayed);
                 OutputTextBox.Text += $"{i}\t\t{frequencyRoll[i]}\t\t{percentage * 100:f3}%\t\t{timesGuessed[i]}\n";
             }
         }
