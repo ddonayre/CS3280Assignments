@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -7,54 +8,94 @@ namespace ShapesMidterm
     // Create 3 subclasses of Shape: Triange, Circle and Square
     public abstract class Shape
     {
-            class Triangle : Shape
-           {
-              public double Area()
-             {
-                double s1, s2, s3, totalarea, c;
-                Console.WriteLine("Please enter the side1: ");
-                s1 = double.Parse(Console.ReadLine());
-                Console.WriteLine("Please enter the side2: ");
-                s2 = double.Parse(Console.ReadLine());
-                Console.WriteLine("Please enter the side3: ");
-                s3 = double.Parse(Console.ReadLine());
-                totalarea = (s1 + s2 + s3) / 3;
-                c = Math.Sqrt((c - s1) * (c - s2) * (c - s3));
-                Console.WriteLine("Area is" + totalarea);
-                Console.ReadLine();
-            }
+        public abstract double Area
+        {
+            get;
         }
 
-        class Circle : Shape
+        public abstract override string ToString();
+    }
+
+    /// <summary>
+    /// /////////////////////////////////////////////////////////////////////////////////////////////////
+    /// </summary>
+    /// 
+    public class Triangle : Shape
+    {
+        public double height;
+        public double width;
+        private double _Area;
+        override public double Area
         {
-            public double Area()
-            {
-                Console.WriteLine("Please enter the radius: ");
-                double radius = double.Parse(Console.ReadLine());
-                double pi = Math.PI;
-                double area = pi * (radius * radius);
-                Console.WriteLine("The Area (A=πr2) of your circle is: ", area);
-            }
+            get { return _Area; }
+        }
 
-            class Square : Shape
-            {
-                public double Area()
-                {
-                    double a, b, totalarea;
-                    Console.WriteLine("Please enter the side: ");
-                    a = double.Parse(Console.ReadLine());
-                    Console.WriteLine("Please enter the length: ");
-                    b = double.Parse(Console.ReadLine());
-                    totalarea = Math.Sqrt(side * side);
-                    Console.WriteLine("area is" + totalarea);
-                    Console.ReadLine();
-                }
-            
-
-                public abstract double Area { get; }
-
-            // override the ToString() method in your shape subclasses
-            public abstract override string ToString();
+        public Triangle(double triHeight, double triBase) : base()
+        {
+            height = triHeight;
+            width = triBase;
+            this._Area = 0.5 * triBase * triHeight;
+        }
+        public override string ToString()
+        {
+            return ($"Triangle: Height = {height} and Base = {width}");
         }
     }
+    /// <summary>
+    /// /////////////////////////////////////////////////////////////////////////////////////////////////
+    /// </summary>
+    /// 
+    public class Circle : Shape
+    {
+        
+        public double radius;
+        private double _Area;
+
+        override public double Area
+        {
+            get { return _Area; }
+        }
+        public Circle(double radius)
+        {
+           this.radius = radius;
+           double pi = Math.PI;
+           this._Area = pi * (radius * radius);
+        }
+
+        public override string ToString()
+        {
+            return ($"Circle: Radius = {radius}");
+        }
+
+    }
+        /// <summary>
+        /// //////////////////////////////////////////////////////////////////////////////////////////////
+        /// </summary>
+        /// 
+     public class Square : Shape
+     {
+         private double _Area;
+         public double side;
+
+         override public double Area
+         {
+              get { return _Area; }
+         }
+         public Square(double side)
+         {
+            this.side = side;
+            this._Area = side * side;
+         }
+
+         public override string ToString()
+         {
+            return ($"Square: Side = {side}");
+         }
+
+                //public abstract double Area { get; }
+
+                // override the ToString() method in your shape subclasses
+                //            public abstract override string ToString();
+     }
 }
+

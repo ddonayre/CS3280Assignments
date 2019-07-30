@@ -1,0 +1,523 @@
+
+David@DESKTOP-MB6SP4G MINGW64 ~
+$ cd "C:\Users\David\Documents\WSU\CS 3280\CS3280Assignments\A2"
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments/A2 (master)
+$ gs
+bash: gs: command not found
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments/A2 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ./
+        ../A3/
+        ../A4/
+        ../Assignment3/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments/A2 (master)
+$ git remote get-url origin
+https://github.com/ddonayre/CS3280Assignments.git
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments/A2 (master)
+$ cd ..
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments (master)
+$ ll
+total 20
+drwxr-xr-x 1 David 197609 0 Jun  5 19:28 A2/
+drwxr-xr-x 1 David 197609 0 Jul 13 15:40 A3/
+drwxr-xr-x 1 David 197609 0 Jul 10 00:26 A4/
+drwxr-xr-x 1 David 197609 0 Jun  1 17:52 Assignment1/
+drwxr-xr-x 1 David 197609 0 Jul 15 14:44 Assignment3/
+drwxr-xr-x 1 David 197609 0 Jun 24 17:48 CS3280MidtermStudent-master/
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments (master)
+$ git push
+Everything up-to-date
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments (master)
+$ ll
+total 20
+drwxr-xr-x 1 David 197609 0 Jun  5 19:28 A2/
+drwxr-xr-x 1 David 197609 0 Jul 13 15:40 A3/
+drwxr-xr-x 1 David 197609 0 Jul 10 00:26 A4/
+drwxr-xr-x 1 David 197609 0 Jun  1 17:52 Assignment1/
+drwxr-xr-x 1 David 197609 0 Jul 15 14:44 Assignment3/
+drwxr-xr-x 1 David 197609 0 Jun 24 17:48 CS3280MidtermStudent-master/
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments (master)
+$ ll -a
+total 40
+drwxr-xr-x 1 David 197609    0 Jul 15 14:44 ./
+drwxr-xr-x 1 David 197609    0 Jul 15 16:33 ../
+drwxr-xr-x 1 David 197609    0 Jul 15 16:46 .git/
+-rw-r--r-- 1 David 197609 6385 May 29 20:03 .gitignore
+drwxr-xr-x 1 David 197609    0 Jun  5 19:28 A2/
+drwxr-xr-x 1 David 197609    0 Jul 13 15:40 A3/
+drwxr-xr-x 1 David 197609    0 Jul 10 00:26 A4/
+drwxr-xr-x 1 David 197609    0 Jun  1 17:52 Assignment1/
+drwxr-xr-x 1 David 197609    0 Jul 15 14:44 Assignment3/
+drwxr-xr-x 1 David 197609    0 Jun 24 17:48 CS3280MidtermStudent-master/
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments (master)
+$ git push
+Everything up-to-date
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments (master)
+$ git remote get-url origin
+https://github.com/ddonayre/CS3280Assignments.git
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments (master)
+$ cd A2
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments/A2 (master)
+$ ll
+total 8
+drwxr-xr-x 1 David 197609    0 Jun 26 19:29 A2/
+-rw-r--r-- 1 David 197609 1112 Jun  5 19:28 A2.sln
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments/A2 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ./
+        ../A3/
+        ../A4/
+        ../Assignment3/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments/A2 (master)
+$ git add .
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments/A2 (master)
+$ git commit -m "catchup"
+[master 6cdefb0] catchup
+ 19 files changed, 924 insertions(+)
+ create mode 100644 A2/A2.sln
+ create mode 100644 A2/A2/A2.csproj
+ create mode 100644 A2/A2/App.config
+ create mode 100644 A2/A2/Form1.Designer.cs
+ create mode 100644 A2/A2/Form1.cs
+ create mode 100644 A2/A2/Form1.resx
+ create mode 100644 A2/A2/Program.cs
+ create mode 100644 A2/A2/Properties/AssemblyInfo.cs
+ create mode 100644 A2/A2/Properties/Resources.Designer.cs
+ create mode 100644 A2/A2/Properties/Resources.resx
+ create mode 100644 A2/A2/Properties/Settings.Designer.cs
+ create mode 100644 A2/A2/Properties/Settings.settings
+ create mode 100644 A2/A2/Resources/Image1.bmp
+ create mode 100644 A2/A2/Resources/die1.gif
+ create mode 100644 A2/A2/Resources/die2.gif
+ create mode 100644 A2/A2/Resources/die3.gif
+ create mode 100644 A2/A2/Resources/die4.gif
+ create mode 100644 A2/A2/Resources/die5.gif
+ create mode 100644 A2/A2/Resources/die6.gif
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments/A2 (master)
+$ git push
+Enumerating objects: 23, done.
+Counting objects: 100% (23/23), done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (22/22), done.
+Writing objects: 100% (22/22), 11.31 KiB | 772.00 KiB/s, done.
+Total 22 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6), completed with 1 local object.
+To https://github.com/ddonayre/CS3280Assignments.git
+   7ff90e7..6cdefb0  master -> master
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments/A2 (master)
+$ l
+bash: l: command not found
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments/A2 (master)
+$ ll
+total 8
+drwxr-xr-x 1 David 197609    0 Jun 26 19:29 A2/
+-rw-r--r-- 1 David 197609 1112 Jun  5 19:28 A2.sln
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments/A2 (master)
+$ cd ..
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments (master)
+$ ll
+total 20
+drwxr-xr-x 1 David 197609 0 Jun  5 19:28 A2/
+drwxr-xr-x 1 David 197609 0 Jul 13 15:40 A3/
+drwxr-xr-x 1 David 197609 0 Jul 10 00:26 A4/
+drwxr-xr-x 1 David 197609 0 Jun  1 17:52 Assignment1/
+drwxr-xr-x 1 David 197609 0 Jul 15 14:44 Assignment3/
+drwxr-xr-x 1 David 197609 0 Jun 24 17:48 CS3280MidtermStudent-master/
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments (master)
+$ cd A3
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments/A3 (master)
+$ ll
+total 42
+-rw-r--r-- 1 David 197609  2783 Jul  3 20:46 A3.csproj
+-rw-r--r-- 1 David 197609  1109 Jul  3 20:26 A3.sln
+-rw-r--r-- 1 David 197609   189 Jul  3 20:26 App.config
+drwxr-xr-x 1 David 197609     0 Jul  3 20:26 bin/
+-rw-r--r-- 1 David 197609   561 Jul 13 15:40 Form1.cs
+-rw-r--r-- 1 David 197609 17905 Jul 13 15:40 Form1.Designer.cs
+-rw-r--r-- 1 David 197609  5817 Jul 13 15:40 Form1.resx
+drwxr-xr-x 1 David 197609     0 Jul  3 20:26 obj/
+-rw-r--r-- 1 David 197609   242 Jul  3 20:26 Program.cs
+drwxr-xr-x 1 David 197609     0 Jul  3 20:26 Properties/
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments/A3 (master)
+$ cd ..
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments (master)
+$ ll
+total 20
+drwxr-xr-x 1 David 197609 0 Jun  5 19:28 A2/
+drwxr-xr-x 1 David 197609 0 Jul 13 15:40 A3/
+drwxr-xr-x 1 David 197609 0 Jul 10 00:26 A4/
+drwxr-xr-x 1 David 197609 0 Jun  1 17:52 Assignment1/
+drwxr-xr-x 1 David 197609 0 Jul 15 14:44 Assignment3/
+drwxr-xr-x 1 David 197609 0 Jun 24 17:48 CS3280MidtermStudent-master/
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments (master)
+$ git lga
+git: 'lga' is not a git command. See 'git --help'.
+
+The most similar command is
+        tag
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments (master)
+$ git log
+commit 6cdefb0e91b86abfe4972b583fa41c7ed371f780 (HEAD -> master, origin/master)
+Author: David D <50682968+ddonayre@users.noreply.github.com>
+Date:   Mon Jul 15 16:50:19 2019 -0600
+
+    catchup
+
+commit 7ff90e7c21e18ba50e1b8b2828b4d0a0d9a938f5
+Author: David D <50682968+ddonayre@users.noreply.github.com>
+Date:   Mon Jun 24 19:31:47 2019 -0600
+
+    midterm finish
+
+commit b523f633a576592c973fe6e322db8f71f2c54df5
+Author: David D <50682968+ddonayre@users.noreply.github.com>
+Date:   Mon Jun 24 17:53:19 2019 -0600
+
+    start midterm
+
+commit dd49663007fee931e34b8514b6574db2925ff0f1
+Author: David D <50682968+ddonayre@users.noreply.github.com>
+Date:   Sat Jun 1 20:10:19 2019 -0600
+
+    assignment 1 complete
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        A3/
+        A4/
+        Assignment3/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments (master)
+$ git add .
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   A3/A3.csproj
+        new file:   A3/A3.sln
+        new file:   A3/App.config
+        new file:   A3/Form1.Designer.cs
+        new file:   A3/Form1.cs
+        new file:   A3/Form1.resx
+        new file:   A3/Program.cs
+        new file:   A3/Properties/AssemblyInfo.cs
+        new file:   A4/A4.csproj
+        new file:   A4/A4.sln
+        new file:   A4/App.config
+        new file:   A4/Form1.Designer.cs
+        new file:   A4/Form1.cs
+        new file:   A4/Form1.resx
+        new file:   A4/Program.cs
+        new file:   A4/Properties/AssemblyInfo.cs
+        new file:   Assignment3/Assignment3.sln
+        new file:   Assignment3/WindowsFormsApp1/App.config
+        new file:   Assignment3/WindowsFormsApp1/Form1.Designer.cs
+        new file:   Assignment3/WindowsFormsApp1/Form1.cs
+        new file:   Assignment3/WindowsFormsApp1/Form1.resx
+        new file:   Assignment3/WindowsFormsApp1/Program.cs
+        new file:   Assignment3/WindowsFormsApp1/Properties/AssemblyInfo.cs
+        new file:   Assignment3/WindowsFormsApp1/Properties/Resources.Designer.cs
+        new file:   Assignment3/WindowsFormsApp1/Properties/Resources.resx
+        new file:   Assignment3/WindowsFormsApp1/Properties/Settings.Designer.cs
+        new file:   Assignment3/WindowsFormsApp1/Properties/Settings.settings
+        new file:   Assignment3/WindowsFormsApp1/WindowsFormsApp1.csproj
+
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments (master)
+$ git commit -m "catchup"
+[master ec6f68e] catchup
+ 28 files changed, 2315 insertions(+)
+ create mode 100644 A3/A3.csproj
+ create mode 100644 A3/A3.sln
+ create mode 100644 A3/App.config
+ create mode 100644 A3/Form1.Designer.cs
+ create mode 100644 A3/Form1.cs
+ create mode 100644 A3/Form1.resx
+ create mode 100644 A3/Program.cs
+ create mode 100644 A3/Properties/AssemblyInfo.cs
+ create mode 100644 A4/A4.csproj
+ create mode 100644 A4/A4.sln
+ create mode 100644 A4/App.config
+ create mode 100644 A4/Form1.Designer.cs
+ create mode 100644 A4/Form1.cs
+ create mode 100644 A4/Form1.resx
+ create mode 100644 A4/Program.cs
+ create mode 100644 A4/Properties/AssemblyInfo.cs
+ create mode 100644 Assignment3/Assignment3.sln
+ create mode 100644 Assignment3/WindowsFormsApp1/App.config
+ create mode 100644 Assignment3/WindowsFormsApp1/Form1.Designer.cs
+ create mode 100644 Assignment3/WindowsFormsApp1/Form1.cs
+ create mode 100644 Assignment3/WindowsFormsApp1/Form1.resx
+ create mode 100644 Assignment3/WindowsFormsApp1/Program.cs
+ create mode 100644 Assignment3/WindowsFormsApp1/Properties/AssemblyInfo.cs
+ create mode 100644 Assignment3/WindowsFormsApp1/Properties/Resources.Designer.cs
+ create mode 100644 Assignment3/WindowsFormsApp1/Properties/Resources.resx
+ create mode 100644 Assignment3/WindowsFormsApp1/Properties/Settings.Designer.cs
+ create mode 100644 Assignment3/WindowsFormsApp1/Properties/Settings.settings
+ create mode 100644 Assignment3/WindowsFormsApp1/WindowsFormsApp1.csproj
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments (master)
+$ git push
+Enumerating objects: 28, done.
+Counting objects: 100% (28/28), done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (25/25), done.
+Writing objects: 100% (27/27), 13.02 KiB | 784.00 KiB/s, done.
+Total 27 (delta 11), reused 0 (delta 0)
+remote: Resolving deltas: 100% (11/11), done.
+To https://github.com/ddonayre/CS3280Assignments.git
+   6cdefb0..ec6f68e  master -> master
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments (master)
+$ git pull
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 5 (delta 3), reused 5 (delta 3), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+From https://github.com/ddonayre/CS3280Assignments
+   ec6f68e..f586caa  master     -> origin/master
+Updating ec6f68e..f586caa
+Fast-forward
+ A2/A2/Form1.cs | 6 +-----
+ 1 file changed, 1 insertion(+), 5 deletions(-)
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments (master)
+$ gs
+bash: gs: command not found
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Assignment3/WindowsFormsApp1/Form1.Designer.cs
+        modified:   Assignment3/WindowsFormsApp1/Form1.cs
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments (master)
+$ git diff
+diff --git a/Assignment3/WindowsFormsApp1/Form1.Designer.cs b/Assignment3/WindowsFormsApp1/Form1.Designer.cs
+index 24ab93d..586b544 100644
+--- a/Assignment3/WindowsFormsApp1/Form1.Designer.cs
++++ b/Assignment3/WindowsFormsApp1/Form1.Designer.cs
+@@ -31,16 +31,16 @@
+             this.components = new System.ComponentModel.Container();
+             this.label2 = new System.Windows.Forms.Label();
+             this.label3 = new System.Windows.Forms.Label();
+-            this.num_of_students = new System.Windows.Forms.TextBox();
+-            this.num_of_assignments = new System.Windows.Forms.TextBox();
+-            this.submit_count = new System.Windows.Forms.Button();
++            this.numStudentsTextbox = new System.Windows.Forms.TextBox();
++            this.numAssignmentsTextbox = new System.Windows.Forms.TextBox();
++            this.SubmitButton = new System.Windows.Forms.Button();
+             this.reset_scores = new System.Windows.Forms.Button();
+             this.first_student = new System.Windows.Forms.Button();
+-            this.previouse_student = new System.Windows.Forms.Button();
++            this.previous_student = new System.Windows.Forms.Button();
+             this.next_student = new System.Windows.Forms.Button();
+             this.last_student = new System.Windows.Forms.Button();
+             this.label6 = new System.Windows.Forms.Label();
+-            this.student_number_textbox = new System.Windows.Forms.TextBox();
++            this.studentNameTextbox = new System.Windows.Forms.TextBox();
+             this.save_name = new System.Windows.Forms.Button();
+             this.groupBox1 = new System.Windows.Forms.GroupBox();
+             this.groupBox2 = new System.Windows.Forms.GroupBox();
+@@ -50,12 +50,12 @@
+             this.label4 = new System.Windows.Forms.Label();
+             this.assignment_score_textbox = new System.Windows.Forms.TextBox();
+             this.enter_assignment_textbox = new System.Windows.Forms.TextBox();
+-            this.label1 = new System.Windows.Forms.Label();
++            this.assignmentNumberLabel = new System.Windows.Forms.Label();
+             this.display_score = new System.Windows.Forms.Button();
+             this.save_file_bttn = new System.Windows.Forms.Button();
+             this.save_file_textbox = new System.Windows.Forms.TextBox();
+             this.label5 = new System.Windows.Forms.Label();
+-            this.display_score_richtextbox = new System.Windows.Forms.RichTextBox();
++            this.DisplayScoreTextBox = new System.Windows.Forms.RichTextBox();
+             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+             this.groupBox1.SuspendLayout();
+             this.groupBox2.SuspendLayout();
+@@ -66,51 +66,61 @@
+             // label2
+             //
+             this.label2.AutoSize = true;
+-            this.label2.Location = new System.Drawing.Point(6, 25);
++            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
++            this.label2.Location = new System.Drawing.Point(35, 31);
++            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+             this.label2.Name = "label2";
+-            this.label2.Size = new System.Drawing.Size(102, 13);
++            this.label2.Size = new System.Drawing.Size(155, 17);
+             this.label2.TabIndex = 1;
+             this.label2.Text = "Number of students:";
+             //
+             // label3
+             //
+             this.label3.AutoSize = true;
+-            this.label3.Location = new System.Drawing.Point(6, 56);
++            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
++            this.label3.Location = new System.Drawing.Point(8, 69);
++            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+             this.label3.Name = "label3";
+-            this.label3.Size = new System.Drawing.Size(120, 13);
++            this.label3.Size = new System.Drawing.Size(183, 17);
+             this.label3.TabIndex = 2;
+             this.label3.Text = "Number of assignments:";
+             //
+-            // num_of_students
++            // numStudentsTextbox
+             //
+-            this.num_of_students.Location = new System.Drawing.Point(137, 19);
+-            this.num_of_students.Name = "num_of_students";
+-            this.num_of_students.Size = new System.Drawing.Size(100, 20);
+-            this.num_of_students.TabIndex = 3;
++            this.numStudentsTextbox.Location = new System.Drawing.Point(201, 28);
++            this.numStudentsTextbox.Margin = new System.Windows.Forms.Padding(4);
++            this.numStudentsTextbox.Name = "numStudentsTextbox";
++            this.numStudentsTextbox.Size = new System.Drawing.Size(53, 22);
++            this.numStudentsTextbox.TabIndex = 3;
+             //
+-            // num_of_assignments
++            // numAssignmentsTextbox
+             //
+-            this.num_of_assignments.Location = new System.Drawing.Point(137, 53);
+-            this.num_of_assignments.Name = "num_of_assignments";
+-            this.num_of_assignments.Size = new System.Drawing.Size(100, 20);
+-            this.num_of_assignments.TabIndex = 4;
++            this.numAssignmentsTextbox.Location = new System.Drawing.Point(202, 69);
++            this.numAssignmentsTextbox.Margin = new System.Windows.Forms.Padding(4);
++            this.numAssignmentsTextbox.Name = "numAssignmentsTextbox";
++            this.numAssignmentsTextbox.Size = new System.Drawing.Size(52, 22);
++            this.numAssignmentsTextbox.TabIndex = 4;
+             //
+-            // submit_count
++            // SubmitButton
+             //
+-            this.submit_count.Location = new System.Drawing.Point(288, 25);
+-            this.submit_count.Name = "submit_count";
+-            this.submit_count.Size = new System.Drawing.Size(96, 41);
+-            this.submit_count.TabIndex = 5;
+-            this.submit_count.Text = "Submit Count";
+-            this.submit_count.UseVisualStyleBackColor = true;
+-            this.submit_count.Click += new System.EventHandler(this.Submit_count_Click);
++            this.SubmitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
++            this.SubmitButton.Location = new System.Drawing.Point(281, 44);
++            this.SubmitButton.Margin = new System.Windows.Forms.Padding(4);
++            this.SubmitButton.Name = "SubmitButton";
++            this.SubmitButton.Size = new System.Drawing.Size(128, 37);
++            this.SubmitButton.TabIndex = 5;
++            this.SubmitButton.Text = "Submit Counts";
++            this.SubmitButton.UseVisualStyleBackColor = true;
++            this.SubmitButton.Click += new System.EventHandler(this.Submit_count_Click);
+             //
+             // reset_scores
+             //
+             this.reset_scores.Enabled = false;
+-            this.reset_scores.Location = new System.Drawing.Point(511, 25);
++            this.reset_scores.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
++            this.reset_scores.Location = new System.Drawing.Point(681, 31);
++            this.reset_scores.Margin = new System.Windows.Forms.Padding(4);
+             this.reset_scores.Name = "reset_scores";
+-            this.reset_scores.Size = new System.Drawing.Size(81, 75);
++            this.reset_scores.Size = new System.Drawing.Size(98, 55);
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments (master)
+$ git add .
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments (master)
+$ git commit -m "assignment 3 done"
+[master 05642b0] assignment 3 done
+ 2 files changed, 231 insertions(+), 185 deletions(-)
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments (master)
+$ git push
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 3.03 KiB | 1.01 MiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To https://github.com/ddonayre/CS3280Assignments.git
+   f586caa..05642b0  master -> master
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments (master)
+$ ll
+total 20
+drwxr-xr-x 1 David 197609 0 Jun  5 19:28 A2/
+drwxr-xr-x 1 David 197609 0 Jul 13 15:40 A3/
+drwxr-xr-x 1 David 197609 0 Jul 10 00:26 A4/
+drwxr-xr-x 1 David 197609 0 Jun  1 17:52 Assignment1/
+drwxr-xr-x 1 David 197609 0 Jul 15 14:44 Assignment3/
+drwxr-xr-x 1 David 197609 0 Jun 24 17:48 CS3280MidtermStudent-master/
+
+David@DESKTOP-MB6SP4G MINGW64 ~/Documents/WSU/CS 3280/CS3280Assignments (master)
+$ Ågit add CS3280MidtermStudent-master/

@@ -46,7 +46,32 @@ namespace ShapesMidterm.GUI
             // YOUR CODE
             // Instantiate Selected Shape and Calculate Area
             // Validate parameters
+            
+            if ( !double.TryParse(param1TextBox.Text, out double param1))
+            {
+                InvalidInput();
+                return;
+            }
+            
+            Shape myShape;
+            if (this.circleButton.Checked)
+            {
+                myShape = new Circle(param1);
+            } else if (this.squareButton.Checked)
+            {
+                myShape = new Square(param1);
+            }
+            else
+            {
+                if (!double.TryParse(param2TextBox.Text, out double param2))
+                {
+                    InvalidInput();
+                    return;
+                }
+                myShape = new Triangle(param1, param2);
+            }
             // Write ToString() and Area to outputBox
+            outputBox.Text = $"{myShape.ToString()} Area: {myShape.Area}";
         }
 
         private void InvalidInput()
