@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Assign5"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MathMenu" Height="610.714" Width="1015.357">
+    <Grid Margin="0,0,-0.2,-0.2" HorizontalAlignment="Right" Width="999">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="Resources/math1.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+
+        <Button x:Name="playGameButton" Content="Play Game" HorizontalAlignment="Left" Margin="215,252,0,289" Width="103" FontSize="16" Grid.Column="1" RenderTransformOrigin="1.641,-0.161" Click="PlayGameButton_Click"/>
+        <Button x:Name="highScoreButton" Content="High Scores" HorizontalAlignment="Left" Margin="428,252,0,0" VerticalAlignment="Top" Width="111" Grid.Column="1" FontSize="16" Height="40" RenderTransformOrigin="1.98,0.6" Click="HighScoreButton_Click"/>
+        <Button x:Name="UserButton" Content="Enter User Data" HorizontalAlignment="Left" Margin="647,250,0,0" VerticalAlignment="Top" Width="144" Height="42" RenderTransformOrigin="2.63,0.2" Grid.Column="1" FontSize="16" Click="UserButton_Click"/>
+        <Label x:Name="label" Content="Math Main Menu" HorizontalAlignment="Left" Margin="399,102,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.047,1.195" Grid.Column="1" FontWeight="Bold" FontSize="20" Height="39" Width="180"/>
+
     </Grid>
 </Window>
