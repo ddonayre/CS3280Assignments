@@ -6,24 +6,26 @@
         xmlns:local="clr-namespace:Assign5"
         mc:Ignorable="d"
         Title="HighScoreWindow" Height="629.679" Width="1076.428" ContentRendered="Window_ContentRendered">
-    <Grid Opacity="0.75">
+    <Grid Opacity="0.75" Margin="0,0,4.4,2">
         <Grid.RowDefinitions>
-            <RowDefinition Height="8*"/>
-            <RowDefinition Height="67*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
+        
         <Grid.Background>
             <ImageBrush ImageSource="Resources/math2.jpg" Stretch="UniformToFill" Opacity="0.75"/>
         </Grid.Background>
+        
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="29*"/>
-            <ColumnDefinition Width="891*"/>
-            <ColumnDefinition Width="147*"/>
-            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="531*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="closeHighScorebutton" Content="Close High Scores" HorizontalAlignment="Left" Margin="859.8,439.4,0,0" VerticalAlignment="Top" Width="119" Height="50" FontSize="16" Grid.Column="2" Click="CloseHighScorebutton_Click" RenderTransformOrigin="3.176,4.145" Grid.ColumnSpan="2" Grid.Row="1"/>
-        <Label x:Name="label" Content="Your Score" Grid.Column="2" HorizontalAlignment="Left" Margin="124.8,44,0,0" VerticalAlignment="Top" Width="528" FontSize="16" Grid.RowSpan="2"/>
-        <Label x:Name="scoreLabel" Content="Score Label" Grid.Column="2" HorizontalAlignment="Left" Margin="344.8,186.4,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <Button x:Name="closeHighScorebutton" Content="Close High Scores" HorizontalAlignment="Left" Margin="858.4,437,0,0" VerticalAlignment="Top" Width="119" Height="50" FontSize="16" Grid.Column="2" Click="CloseHighScorebutton_Click" RenderTransformOrigin="3.176,4.145" Grid.Row="1"/>
+        <Label x:Name="label" Content="Your Score" Grid.Column="2" HorizontalAlignment="Left" Margin="123.4,3,0,0" VerticalAlignment="Top" Width="528" FontSize="16" Height="32" Grid.Row="1"/>
+        <Label x:Name="scoreLabel" Content="Score Label" Grid.Column="2" HorizontalAlignment="Left" Margin="343.4,184,0,0" VerticalAlignment="Top" Grid.Row="1" Height="26" Width="71"/>
 
     </Grid>
 </Window>

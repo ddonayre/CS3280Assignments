@@ -11,6 +11,7 @@
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+        
         <Grid.Background>
             <ImageBrush ImageSource="Resources/math1.jpg" Stretch="UniformToFill"/>
         </Grid.Background>

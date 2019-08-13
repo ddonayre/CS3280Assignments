@@ -10,6 +10,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="Resources/math3.jpg" Stretch="UniformToFill"/>
         </Grid.Background>
+        
         <Button x:Name="endGameButton" Content="End Game" HorizontalAlignment="Left" Margin="98,219,0,0" VerticalAlignment="Top" Width="108" Height="41" FontSize="16" RenderTransformOrigin="-0.285,3.822" Click="EndGameButton_Click"/>
         <Label x:Name="numberALabel" Content="NumberA" HorizontalAlignment="Left" Margin="98,111,0,0" VerticalAlignment="Top" FontSize="16"/>
         <Label x:Name="numberBLabel" Content="NumberB" HorizontalAlignment="Left" Margin="364,111,0,0" VerticalAlignment="Top" FontSize="16"/>

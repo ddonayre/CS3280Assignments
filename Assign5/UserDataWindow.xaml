@@ -18,9 +18,11 @@
             <RowDefinition Height="37*"/>
             <RowDefinition Height="516*"/>
         </Grid.RowDefinitions>
+        
         <Grid.Background>
             <ImageBrush ImageSource="Resources/math4.jpg" Stretch="UniformToFill" Opacity="0.805"/>
         </Grid.Background>
+        
         <Button x:Name="backbutton" Content="Back to Menu" HorizontalAlignment="Left" Margin="605.3,291.2,0,0" VerticalAlignment="Top" Width="116" Height="42" FontSize="16" Click="Backbutton_Click" Grid.Row="1" Grid.Column="1"/>
         <Label x:Name="label" Content="Enter User Info" HorizontalAlignment="Left" Margin="156.3,59.2,0,0" VerticalAlignment="Top" Width="238" FontSize="16" Grid.Row="1" Grid.Column="1"/>
         <Label x:Name="nameLabel" Content="Name" HorizontalAlignment="Left" Margin="75.3,108.2,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.437,2.129" Grid.Row="1" Grid.Column="1"/>
